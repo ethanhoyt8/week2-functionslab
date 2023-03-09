@@ -284,8 +284,8 @@ console.log(oddChecker)
 
 //CODE HERE
 
-const bestMovie = (RevengeOfTheSith) => `${RevengeOfTheSith} is the best movie ever!`
-console.log(bestMovie)
+const bestMovie = (movieName) => `${movieName} is the best movie ever!`
+console.log(bestMovie("Revenge of the sith"))
 
 
 
@@ -375,15 +375,15 @@ makeUppercase(sampleString)
   return 'must provide a valid email address'
 */
 
-// function emailCheck(email) {
-//   email = String(email).trim()
-//   if (email.includes('@')) {
-//     return "email verified"
-//   } else {
-//     return "must provide a valid email address"
-//   }
-// }
-// console.log('email verified')
+function emailCheck(email) {
+  email = String(email).trim()
+  if (email.includes('@')) {
+    return "email verified"
+  } else {
+    return "must provide a valid email address"
+  }
+}
+console.log(emailCheck("a@gmail.com"))
 
 
 ////////////////// PROBLEM 19 ////////////////////
@@ -415,6 +415,13 @@ console.log(totalFrogs)
 */
 
 //CODE HERE
+
+function frogPurchases2(gold) {
+  return Math.floor(gold/3)
+}
+let totalFrogs2 = frogPurchases2(91)
+console.log(totalFrogs2)
+
 
 
 
@@ -481,13 +488,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["rubberDuck", "duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["duck","realDuck"]
